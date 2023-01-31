@@ -1,8 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100%;
   font-family: Helvetica, Arial, sans-serif;
-  background: rgb(142, 197, 252);
-  background: linear-gradient(90deg, rgb(142, 197, 252) 0%, rgb(224, 195, 252) 100%);
+  background-blend-mode: screen;
+  background: linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent), linear-gradient(-90deg, coral, transparent);
+}
+
+.container {
+  max-width: 1170px;
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Fonts */
+/* Colors */
+/* Sizes */
+/* Media breakpoint */
+.grid {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.grid__item {
+  max-width: 275px;
+  margin-bottom: 20px;
+}
+
+.grid__item:not(:nth-child(5n)) {
+  margin-right: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.15s linear;
+}
+
+.card__image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.card__price {
+  margin-top: auto;
+  font-size: 16px;
+  color: #666666;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+@import './variables';
+@import './mixins';
+
+.grid {
+  @include list-reset();
+  display: flex;
+
+  &__item {
+    max-width: 275px;
+    margin-bottom: $gap20;
+
+    &:not(:nth-child(5n)) {
+      margin-right: $gap20;
+    }
+  }
+}

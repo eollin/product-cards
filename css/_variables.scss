@@ -1,0 +1,30 @@
+/* Fonts */
+$fsz-12 : 12px;
+$fsz-14 : 14px;
+$fsz-16 : 16px;
+$fsz-18 : 18px;
+$fsz-20 : 20px;
+
+/* Colors */
+$color-black: #000000;
+$color-white: #ffffff;
+$main-gray: #333333;
+$accent-gray: #666666;
+$transparent: rgba(#ffffff, 0);
+
+/* Sizes */
+$container-width: 1170px;
+
+// transition
+$transition: .15s linear;
+
+// gaps
+$gap16: 16px;
+$gap20: 20px;
+
+/* Media breakpoint */
+$xs: 400px;
+$sm: 575px;
+$md: 768px;
+$lg: 1180px;
+$xl: 1600px;

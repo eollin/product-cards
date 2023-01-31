@@ -1,0 +1,32 @@
+@import './variables';
+@import './mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  background-blend-mode: screen;
+  background:
+    linear-gradient(limegreen, transparent),
+    linear-gradient(90deg, skyblue, transparent),
+    linear-gradient(-90deg, coral, transparent);
+}
+
+.container {
+  max-width: $container-width;
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
